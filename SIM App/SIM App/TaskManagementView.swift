@@ -19,17 +19,9 @@ struct TaskManagementView: View {
             List {
                 ForEach(tasks) { task in
                     HStack {
-                        if let taskName = task.name {
-                            Text(taskName)
-                        } else {
-                            Text("Unknown Task")
-                        }
+                        Text(task.name ?? "")
                         Spacer()
-                        if let timeToComplete = task.timeToComplete {
-                            Text("\(timeToComplete, formatter: dateFormatter)")
-                        } else {
-                            Text("Current Time: \(Date(), formatter: dateFormatter)")
-                        }
+                        Text(task.timeToComplete ?? Date(), style: .date)
                         CheckboxView(isChecked: Binding(
                             get: { task.isCompleted },
                             set: { isChecked in
@@ -59,32 +51,39 @@ struct TaskManagementView: View {
             }
         }
         .navigationTitle("Tasks")
+        .navigationBarItems(trailing: NavigationLink(destination: SimDetailView(sim: sim)) {
+            Image(systemName: "person.crop.circle")
+                .imageScale(.large)
+                .foregroundColor(.blue)
+        })
     }
 
-    private func deleteTask(offsets: IndexSet) {
+    private func deleteTask(at offsets: IndexSet) {
         withAnimation {
-            offsets.map { tasks[$0] }.forEach(viewContext.delete)
-            try? viewContext.save()
+            for index in offsets {
+                let taskToDelete = tasks[index]
+                viewContext.delete(taskToDelete)
+            }
+            do {
+                try viewContext.save()
+            } catch {
+                let nsError = error as NSError
+                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            }
         }
-    }
-
-    private var dateFormatter: DateFormatter {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .short
-        return formatter
     }
 }
 
 struct TaskManagementView_Previews: PreviewProvider {
     static var previews: some View {
         let context = PersistenceController.shared.container.viewContext
-        let previewSim = SimEntity(context: context)
-        previewSim.id = UUID()
-        previewSim.name = "Test Sim"
-        previewSim.gender = "Male"
-        previewSim.age = 30
+        let sampleSim = SimEntity(context: context)
+        sampleSim.name = "John Doe"
+        sampleSim.gender = "Male"
+        sampleSim.age = 25
         
-        return TaskManagementView(sim: previewSim).environment(\.managedObjectContext, context)
+        return NavigationView {
+            TaskManagementView(sim: sampleSim).environment(\.managedObjectContext, context)
+        }
     }
 }
