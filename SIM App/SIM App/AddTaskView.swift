@@ -7,6 +7,8 @@ struct AddTaskView: View {
     
     @State private var taskName: String = ""
     @State private var selectedDate = Date()
+    @State private var selectedTime = Date()
+    @State private var isDailyTask = false
 
     var body: some View {
         NavigationView {
@@ -15,9 +17,22 @@ struct AddTaskView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
 
-                DatePicker("Select Date and Time", selection: $selectedDate, displayedComponents: [.date, .hourAndMinute])
+                DatePicker("Select Date", selection: $selectedDate, displayedComponents: [.date])
                     .datePickerStyle(GraphicalDatePickerStyle())
                     .padding()
+                    .disabled(isDailyTask)
+
+                DatePicker("Select Time", selection: $selectedTime, displayedComponents: [.hourAndMinute])
+                    .datePickerStyle(GraphicalDatePickerStyle())
+                    .padding()
+
+                Toggle("Daily Task", isOn: $isDailyTask)
+                    .padding()
+                    .onChange(of: isDailyTask) { newValue in
+                        if newValue {
+                            selectedDate = Date()
+                        }
+                    }
 
                 Button(action: {
                     saveTask()
@@ -45,12 +60,21 @@ struct AddTaskView: View {
             return
         }
 
-        let newTask = TaskEntity(context: viewContext)
-        newTask.id = UUID()
-        newTask.name = taskName
-        newTask.timeToComplete = selectedDate
-        newTask.isCompleted = false
-        newTask.sim = sim
+        if isDailyTask {
+            let newDailyTask = DailyTaskEntity(context: viewContext)
+            newDailyTask.id = UUID()
+            newDailyTask.name = taskName
+            newDailyTask.time = selectedTime
+            newDailyTask.isCompleted = false
+            newDailyTask.sim = sim
+        } else {
+            let newTask = TaskEntity(context: viewContext)
+            newTask.id = UUID()
+            newTask.name = taskName
+            newTask.timeToComplete = selectedDate
+            newTask.isCompleted = false
+            newTask.sim = sim
+        }
 
         do {
             try viewContext.save()

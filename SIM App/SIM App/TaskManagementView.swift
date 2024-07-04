@@ -4,6 +4,7 @@ struct TaskManagementView: View {
     @ObservedObject var sim: SimEntity
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest private var tasks: FetchedResults<TaskEntity>
+    @FetchRequest private var dailyTasks: FetchedResults<DailyTaskEntity>
     @State private var showAddTask = false
 
     init(sim: SimEntity) {
@@ -12,35 +13,63 @@ struct TaskManagementView: View {
             sortDescriptors: [NSSortDescriptor(keyPath: \TaskEntity.timeToComplete, ascending: true)],
             predicate: NSPredicate(format: "sim == %@", sim),
             animation: .default)
+        self._dailyTasks = FetchRequest<DailyTaskEntity>(
+            sortDescriptors: [NSSortDescriptor(keyPath: \DailyTaskEntity.time, ascending: true)],
+            predicate: NSPredicate(format: "sim == %@", sim),
+            animation: .default)
     }
 
     var body: some View {
         VStack {
             List {
-                ForEach(tasks) { task in
-                    HStack {
-                        VStack(alignment: .leading) {
+                Section(header: Text("Tasks")) {
+                    ForEach(tasks) { task in
+                        HStack {
                             Text(task.name ?? "")
-                                .font(.headline)
-                            Text("\(task.timeToComplete?.formattedDate ?? "") at \(task.timeToComplete?.formattedTime ?? "")")
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
-                        }
-                        Spacer()
-                        CheckboxView(isChecked: Binding(
-                            get: { task.isCompleted },
-                            set: { isChecked in
-                                withAnimation {
-                                    task.isCompleted = isChecked
-                                    try? viewContext.save()
+                            Spacer()
+                            Text(task.timeToComplete ?? Date(), style: .date)
+                            Text(task.timeToComplete ?? Date(), style: .time)
+                            CheckboxView(isChecked: Binding(
+                                get: { task.isCompleted },
+                                set: { isChecked in
+                                    withAnimation {
+                                        task.isCompleted = isChecked
+                                        try? viewContext.save()
+                                    }
                                 }
+                            ))
+                        }
+                    }
+                    .onDelete(perform: deleteTask)
+                }
+                
+                if !dailyTasks.isEmpty {
+                    Section(header: Text("Daily Tasks")) {
+                        ForEach(dailyTasks) { task in
+                            HStack {
+                                Text(task.name ?? "")
+                                Spacer()
+                                Text(task.time ?? Date(), style: .time)
+                                CheckboxView(isChecked: Binding(
+                                    get: { task.isCompleted },
+                                    set: { isChecked in
+                                        withAnimation {
+                                            task.isCompleted = isChecked
+                                            try? viewContext.save()
+                                        }
+                                    }
+                                ))
                             }
-                        ))
+                        }
                     }
                 }
-                .onDelete(perform: deleteTask)
             }
             .listStyle(InsetGroupedListStyle())
+
+            if !dailyTasks.isEmpty {
+                ProgressView(value: calculateDailyTaskCompletion(), total: Double(dailyTasks.count))
+                    .padding()
+            }
 
             Button(action: {
                 showAddTask.toggle()
@@ -55,7 +84,7 @@ struct TaskManagementView: View {
                 AddTaskView(sim: sim).environment(\.managedObjectContext, viewContext)
             }
         }
-        .navigationTitle("Tasks")
+        .navigationTitle("Reminders")
         .navigationBarItems(trailing: NavigationLink(destination: SimDetailView(sim: sim)) {
             Image(systemName: "person.crop.circle")
                 .imageScale(.large)
@@ -77,6 +106,11 @@ struct TaskManagementView: View {
             }
         }
     }
+
+    private func calculateDailyTaskCompletion() -> Double {
+        let completedTasks = dailyTasks.filter { $0.isCompleted }.count
+        return Double(completedTasks)
+    }
 }
 
 struct TaskManagementView_Previews: PreviewProvider {
@@ -90,19 +124,5 @@ struct TaskManagementView_Previews: PreviewProvider {
         return NavigationView {
             TaskManagementView(sim: sampleSim).environment(\.managedObjectContext, context)
         }
-    }
-}
-
-extension Date {
-    var formattedDate: String {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        return formatter.string(from: self)
-    }
-
-    var formattedTime: String {
-        let formatter = DateFormatter()
-        formatter.timeStyle = .short
-        return formatter.string(from: self)
     }
 }

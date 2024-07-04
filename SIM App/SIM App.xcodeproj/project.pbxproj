@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C32B8FC72C370C220057B038 /* DailyTaskManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B8FC62C370C220057B038 /* DailyTaskManagement.swift */; };
 		C357B9572C36546E000B2C4A /* Sim_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357B9562C36546E000B2C4A /* Sim_App.swift */; };
 		C357B95B2C365471000B2C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C357B95A2C365471000B2C4A /* Assets.xcassets */; };
 		C357B95E2C365471000B2C4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C357B95D2C365471000B2C4A /* Preview Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C32B8FC62C370C220057B038 /* DailyTaskManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTaskManagement.swift; sourceTree = "<group>"; };
 		C357B9532C36546E000B2C4A /* Sim App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sim App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C357B9562C36546E000B2C4A /* Sim_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sim_App.swift; sourceTree = "<group>"; };
 		C357B95A2C365471000B2C4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				C3E37DBA2C366A2C00BBD598 /* SimSelectionView.swift */,
 				C3E37DC02C36702A00BBD598 /* SimCreationView.swift */,
 				C3E37DB22C36677200BBD598 /* TaskManagementView.swift */,
+				C32B8FC62C370C220057B038 /* DailyTaskManagement.swift */,
 				C3E37DB62C36696400BBD598 /* CheckboxView.swift */,
 				C3E37DB82C36697900BBD598 /* AddTaskView.swift */,
 				C3E37DC42C36775000BBD598 /* SimDetailView.swift */,
@@ -162,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3E37DB32C36677200BBD598 /* TaskManagementView.swift in Sources */,
+				C32B8FC72C370C220057B038 /* DailyTaskManagement.swift in Sources */,
 				C3E37DB92C36697900BBD598 /* AddTaskView.swift in Sources */,
 				C357B9572C36546E000B2C4A /* Sim_App.swift in Sources */,
 				C357B9752C365536000B2C4A /* Sim_App.xcdatamodeld in Sources */,

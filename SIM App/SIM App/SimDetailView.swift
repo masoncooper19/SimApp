@@ -6,8 +6,6 @@ struct SimDetailView: View {
         "batman",
         "minion",
         "angrybird",
-        "mario",
-        "pokeball",
         "ridinghood",
         "spongebob",
         "vader"
