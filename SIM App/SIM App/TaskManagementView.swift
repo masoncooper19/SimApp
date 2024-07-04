@@ -19,9 +19,14 @@ struct TaskManagementView: View {
             List {
                 ForEach(tasks) { task in
                     HStack {
-                        Text(task.name ?? "")
+                        VStack(alignment: .leading) {
+                            Text(task.name ?? "")
+                                .font(.headline)
+                            Text("\(task.timeToComplete?.formattedDate ?? "") at \(task.timeToComplete?.formattedTime ?? "")")
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
+                        }
                         Spacer()
-                        Text(task.timeToComplete ?? Date(), style: .date)
                         CheckboxView(isChecked: Binding(
                             get: { task.isCompleted },
                             set: { isChecked in
@@ -85,5 +90,19 @@ struct TaskManagementView_Previews: PreviewProvider {
         return NavigationView {
             TaskManagementView(sim: sampleSim).environment(\.managedObjectContext, context)
         }
+    }
+}
+
+extension Date {
+    var formattedDate: String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        return formatter.string(from: self)
+    }
+
+    var formattedTime: String {
+        let formatter = DateFormatter()
+        formatter.timeStyle = .short
+        return formatter.string(from: self)
     }
 }
