@@ -6,6 +6,8 @@ struct TaskManagementView: View {
     @FetchRequest private var tasks: FetchedResults<TaskEntity>
     @FetchRequest private var dailyTasks: FetchedResults<DailyTaskEntity>
     @State private var showAddTask = false
+    @State private var selectedTask: TaskEntity? = nil
+    @State private var isShowingEditTaskView = false
 
     init(sim: SimEntity) {
         self.sim = sim
@@ -129,17 +131,7 @@ struct TaskListItem: View {
     }
     
     var body: some View {
-        HStack {
-            Text(task.name ?? "")
-            Spacer()
-            VStack {
-                //dateToComplete is for time and timeToComplete is for date
-                Text(dateFormatter.string(from: task.timeToComplete ?? Date()))
-                    .font(.caption)
-                Text(task.dateToComplete ?? Date(), style: .time)
-                    .font(.caption)
-
-            }
+        HStack() {
             CheckboxView(isChecked: Binding(
                 get: { task.isCompleted },
                 set: { isChecked in
@@ -149,6 +141,14 @@ struct TaskListItem: View {
                     }
                 }
             ))
+            Text(task.name ?? "")
+            Spacer()
+            VStack {
+                Text(task.timeToComplete ?? Date(), style: .time)
+                    .font(.caption)
+                Text(dateFormatter.string(from: task.dateToComplete ?? Date()))
+                    .font(.caption)
+            }
         }
     }
 }
@@ -158,10 +158,6 @@ struct DailyTaskListItem: View {
     
     var body: some View {
         HStack {
-            Text(task.name ?? "")
-            Spacer()
-            Text(task.time ?? Date(), style: .time)
-                .font(.caption)
             CheckboxView(isChecked: Binding(
                 get: { task.isCompleted },
                 set: { isChecked in
@@ -171,9 +167,14 @@ struct DailyTaskListItem: View {
                     }
                 }
             ))
+            Text(task.name ?? "")
+            Spacer()
+            Text(task.time ?? Date(), style: .time)
+                .font(.caption)
         }
     }
 }
+
 
 struct TaskManagementView_Previews: PreviewProvider {
     static var previews: some View {

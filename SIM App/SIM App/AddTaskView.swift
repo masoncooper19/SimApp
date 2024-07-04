@@ -71,8 +71,8 @@ struct AddTaskView: View {
             let newTask = TaskEntity(context: viewContext)
             newTask.id = UUID()
             newTask.name = taskName
-            newTask.timeToComplete = selectedDate
-            newTask.dateToComplete = selectedTime
+            newTask.timeToComplete = selectedTime
+            newTask.dateToComplete = selectedDate
             newTask.isCompleted = false
             newTask.sim = sim
         }
