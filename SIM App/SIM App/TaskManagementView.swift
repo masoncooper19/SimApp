@@ -120,16 +120,25 @@ struct TaskManagementView: View {
 
 struct TaskListItem: View {
     @ObservedObject var task: TaskEntity
+    private let dateFormatter: DateFormatter
+    
+    init(task: TaskEntity) {
+        self.task = task
+        self.dateFormatter = DateFormatter()
+        self.dateFormatter.dateFormat = "M/d/yy"
+    }
     
     var body: some View {
         HStack {
             Text(task.name ?? "")
             Spacer()
             VStack {
-                Text(task.timeToComplete ?? Date(), style: .date)
+                //dateToComplete is for time and timeToComplete is for date
+                Text(dateFormatter.string(from: task.timeToComplete ?? Date()))
                     .font(.caption)
                 Text(task.dateToComplete ?? Date(), style: .time)
                     .font(.caption)
+
             }
             CheckboxView(isChecked: Binding(
                 get: { task.isCompleted },
