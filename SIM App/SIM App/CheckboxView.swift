@@ -10,7 +10,7 @@ struct CheckboxView: View {
             onTap?()
         }) {
             Image(systemName: isChecked ? "checkmark.square.fill" : "square")
-                .foregroundColor(isChecked ? .green : .secondary)
+                .foregroundColor(isChecked ? .blue : .secondary)
         }
     }
 }

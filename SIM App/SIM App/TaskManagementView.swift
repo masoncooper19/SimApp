@@ -27,8 +27,12 @@ struct TaskManagementView: View {
                         HStack {
                             Text(task.name ?? "")
                             Spacer()
-                            Text(task.timeToComplete ?? Date(), style: .date)
-                            Text(task.timeToComplete ?? Date(), style: .time)
+                            VStack {
+                                Text(task.timeToComplete ?? Date(), style: .date)
+                                    .font(.caption)
+                                Text(task.timeToComplete ?? Date(), style: .time)
+                                    .font(.caption)
+                            }
                             CheckboxView(isChecked: Binding(
                                 get: { task.isCompleted },
                                 set: { isChecked in
@@ -50,6 +54,7 @@ struct TaskManagementView: View {
                                 Text(task.name ?? "")
                                 Spacer()
                                 Text(task.time ?? Date(), style: .time)
+                                    .font(.caption)
                                 CheckboxView(isChecked: Binding(
                                     get: { task.isCompleted },
                                     set: { isChecked in
