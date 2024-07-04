@@ -11,12 +11,13 @@
 		C357B9592C36546E000B2C4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357B9582C36546E000B2C4A /* ContentView.swift */; };
 		C357B95B2C365471000B2C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C357B95A2C365471000B2C4A /* Assets.xcassets */; };
 		C357B95E2C365471000B2C4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C357B95D2C365471000B2C4A /* Preview Assets.xcassets */; };
-		C357B9652C3654AE000B2C4A /* CreateSimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357B9642C3654AE000B2C4A /* CreateSimView.swift */; };
-		C357B9692C3654D2000B2C4A /* SimListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357B9682C3654D2000B2C4A /* SimListView.swift */; };
-		C357B96B2C3654DE000B2C4A /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357B96A2C3654DE000B2C4A /* TasksView.swift */; };
-		C357B96D2C3654EB000B2C4A /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357B96C2C3654EB000B2C4A /* TaskRowView.swift */; };
-		C357B96F2C3654FC000B2C4A /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357B96E2C3654FC000B2C4A /* PersistenceController.swift */; };
 		C357B9752C365536000B2C4A /* Sim_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C357B9732C365536000B2C4A /* Sim_App.xcdatamodeld */; };
+		C3E37DB12C3666BD00BBD598 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E37DB02C3666BD00BBD598 /* PersistenceController.swift */; };
+		C3E37DB32C36677200BBD598 /* TaskManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E37DB22C36677200BBD598 /* TaskManagementView.swift */; };
+		C3E37DB72C36696500BBD598 /* CheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E37DB62C36696400BBD598 /* CheckboxView.swift */; };
+		C3E37DB92C36697900BBD598 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E37DB82C36697900BBD598 /* AddTaskView.swift */; };
+		C3E37DBB2C366A2C00BBD598 /* SimSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E37DBA2C366A2C00BBD598 /* SimSelectionView.swift */; };
+		C3E37DC12C36702A00BBD598 /* SimCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E37DC02C36702A00BBD598 /* SimCreationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,12 +26,13 @@
 		C357B9582C36546E000B2C4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C357B95A2C365471000B2C4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C357B95D2C365471000B2C4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C357B9642C3654AE000B2C4A /* CreateSimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSimView.swift; sourceTree = "<group>"; };
-		C357B9682C3654D2000B2C4A /* SimListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimListView.swift; sourceTree = "<group>"; };
-		C357B96A2C3654DE000B2C4A /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
-		C357B96C2C3654EB000B2C4A /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
-		C357B96E2C3654FC000B2C4A /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		C357B9742C365536000B2C4A /* Sim_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sim_App.xcdatamodel; sourceTree = "<group>"; };
+		C3E37DB02C3666BD00BBD598 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		C3E37DB22C36677200BBD598 /* TaskManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagementView.swift; sourceTree = "<group>"; };
+		C3E37DB62C36696400BBD598 /* CheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxView.swift; sourceTree = "<group>"; };
+		C3E37DB82C36697900BBD598 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		C3E37DBA2C366A2C00BBD598 /* SimSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimSelectionView.swift; sourceTree = "<group>"; };
+		C3E37DC02C36702A00BBD598 /* SimCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimCreationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,11 +67,12 @@
 			children = (
 				C357B9562C36546E000B2C4A /* Sim_App.swift */,
 				C357B9582C36546E000B2C4A /* ContentView.swift */,
-				C357B9642C3654AE000B2C4A /* CreateSimView.swift */,
-				C357B9682C3654D2000B2C4A /* SimListView.swift */,
-				C357B96A2C3654DE000B2C4A /* TasksView.swift */,
-				C357B96C2C3654EB000B2C4A /* TaskRowView.swift */,
-				C357B96E2C3654FC000B2C4A /* PersistenceController.swift */,
+				C3E37DB02C3666BD00BBD598 /* PersistenceController.swift */,
+				C3E37DBA2C366A2C00BBD598 /* SimSelectionView.swift */,
+				C3E37DC02C36702A00BBD598 /* SimCreationView.swift */,
+				C3E37DB22C36677200BBD598 /* TaskManagementView.swift */,
+				C3E37DB62C36696400BBD598 /* CheckboxView.swift */,
+				C3E37DB82C36697900BBD598 /* AddTaskView.swift */,
 				C357B9732C365536000B2C4A /* Sim_App.xcdatamodeld */,
 				C357B95A2C365471000B2C4A /* Assets.xcassets */,
 				C357B95C2C365471000B2C4A /* Preview Content */,
@@ -155,14 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C357B9692C3654D2000B2C4A /* SimListView.swift in Sources */,
-				C357B96F2C3654FC000B2C4A /* PersistenceController.swift in Sources */,
-				C357B9652C3654AE000B2C4A /* CreateSimView.swift in Sources */,
+				C3E37DB32C36677200BBD598 /* TaskManagementView.swift in Sources */,
 				C357B9592C36546E000B2C4A /* ContentView.swift in Sources */,
+				C3E37DB92C36697900BBD598 /* AddTaskView.swift in Sources */,
 				C357B9572C36546E000B2C4A /* Sim_App.swift in Sources */,
 				C357B9752C365536000B2C4A /* Sim_App.xcdatamodeld in Sources */,
-				C357B96D2C3654EB000B2C4A /* TaskRowView.swift in Sources */,
-				C357B96B2C3654DE000B2C4A /* TasksView.swift in Sources */,
+				C3E37DC12C36702A00BBD598 /* SimCreationView.swift in Sources */,
+				C3E37DB12C3666BD00BBD598 /* PersistenceController.swift in Sources */,
+				C3E37DB72C36696500BBD598 /* CheckboxView.swift in Sources */,
+				C3E37DBB2C366A2C00BBD598 /* SimSelectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
