@@ -11,9 +11,10 @@ struct SimDetailView: View {
         "vader"
     ]
     
+    @State private var showEditSim = false
+
     var body: some View {
-        VStack(spacing: 20) {  
-            
+        VStack(spacing: 20) {
             Image(simImages[Int(sim.character)])
                 .resizable()
                 .scaledToFit()
@@ -48,6 +49,17 @@ struct SimDetailView: View {
         }
         .padding()
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarItems(trailing:
+            Button(action: {
+                showEditSim = true
+            }) {
+                Image(systemName: "pencil.circle")
+                    .imageScale(.large)
+            }
+        )
+        .sheet(isPresented: $showEditSim) {
+            EditSimView(sim: sim)
+        }
     }
 }
 

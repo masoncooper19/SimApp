@@ -15,16 +15,16 @@ struct AddTaskView: View {
             VStack {
                 TextField("Task Name", text: $taskName)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
+                    .padding(.horizontal)
 
                 DatePicker("Select Date", selection: $selectedDate, displayedComponents: [.date])
                     .datePickerStyle(GraphicalDatePickerStyle())
-                    .padding()
+                    .padding(.horizontal)
                     .disabled(isDailyTask)
 
                 DatePicker("Select Time", selection: $selectedTime, displayedComponents: [.hourAndMinute])
                     .datePickerStyle(GraphicalDatePickerStyle())
-                    .padding()
+                    .padding(.horizontal)
 
                 Toggle("Daily Task", isOn: $isDailyTask)
                     .padding()

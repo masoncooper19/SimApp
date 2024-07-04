@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C32B8FC72C370C220057B038 /* DailyTaskManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B8FC62C370C220057B038 /* DailyTaskManagement.swift */; };
+		C32B8FCD2C3747A50057B038 /* EditSimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B8FCC2C3747A50057B038 /* EditSimView.swift */; };
 		C357B9572C36546E000B2C4A /* Sim_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357B9562C36546E000B2C4A /* Sim_App.swift */; };
 		C357B95B2C365471000B2C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C357B95A2C365471000B2C4A /* Assets.xcassets */; };
 		C357B95E2C365471000B2C4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C357B95D2C365471000B2C4A /* Preview Assets.xcassets */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		C32B8FC62C370C220057B038 /* DailyTaskManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTaskManagement.swift; sourceTree = "<group>"; };
+		C32B8FCC2C3747A50057B038 /* EditSimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSimView.swift; sourceTree = "<group>"; };
 		C357B9532C36546E000B2C4A /* Sim App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sim App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C357B9562C36546E000B2C4A /* Sim_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sim_App.swift; sourceTree = "<group>"; };
 		C357B95A2C365471000B2C4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				C3E37DB62C36696400BBD598 /* CheckboxView.swift */,
 				C3E37DB82C36697900BBD598 /* AddTaskView.swift */,
 				C3E37DC42C36775000BBD598 /* SimDetailView.swift */,
+				C32B8FCC2C3747A50057B038 /* EditSimView.swift */,
 				C357B9732C365536000B2C4A /* Sim_App.xcdatamodeld */,
 				C357B95A2C365471000B2C4A /* Assets.xcassets */,
 				C357B95C2C365471000B2C4A /* Preview Content */,
@@ -170,6 +173,7 @@
 				C357B9572C36546E000B2C4A /* Sim_App.swift in Sources */,
 				C357B9752C365536000B2C4A /* Sim_App.xcdatamodeld in Sources */,
 				C3E37DC12C36702A00BBD598 /* SimCreationView.swift in Sources */,
+				C32B8FCD2C3747A50057B038 /* EditSimView.swift in Sources */,
 				C3E37DC32C36763300BBD598 /* ContentView.swift in Sources */,
 				C3E37DB12C3666BD00BBD598 /* PersistenceController.swift in Sources */,
 				C3E37DB72C36696500BBD598 /* CheckboxView.swift in Sources */,
