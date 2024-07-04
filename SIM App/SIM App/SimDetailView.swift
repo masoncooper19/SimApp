@@ -18,9 +18,10 @@ struct SimDetailView: View {
             
             Image(simImages[Int(sim.character)])
                 .resizable()
-                .aspectRatio(contentMode: .fit)
+                .scaledToFit()
                 .frame(width: 100, height: 100)
-                .cornerRadius(10)
+                .clipShape(Circle())
+                .overlay(Circle().stroke(Color.blue, lineWidth: 2))
                 .padding(.horizontal)
             
             Text(sim.name ?? "Unnamed Sim")
