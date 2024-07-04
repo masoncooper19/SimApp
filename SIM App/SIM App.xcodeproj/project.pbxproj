@@ -19,7 +19,6 @@
 		C3E37DC12C36702A00BBD598 /* SimCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E37DC02C36702A00BBD598 /* SimCreationView.swift */; };
 		C3E37DC32C36763300BBD598 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E37DC22C36763300BBD598 /* ContentView.swift */; };
 		C3E37DC52C36775000BBD598 /* SimDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E37DC42C36775000BBD598 /* SimDetailView.swift */; };
-		C3E37DC72C36786200BBD598 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E37DC62C36786200BBD598 /* ThemeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +35,6 @@
 		C3E37DC02C36702A00BBD598 /* SimCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimCreationView.swift; sourceTree = "<group>"; };
 		C3E37DC22C36763300BBD598 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C3E37DC42C36775000BBD598 /* SimDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimDetailView.swift; sourceTree = "<group>"; };
-		C3E37DC62C36786200BBD598 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +76,6 @@
 				C3E37DB62C36696400BBD598 /* CheckboxView.swift */,
 				C3E37DB82C36697900BBD598 /* AddTaskView.swift */,
 				C3E37DC42C36775000BBD598 /* SimDetailView.swift */,
-				C3E37DC62C36786200BBD598 /* ThemeView.swift */,
 				C357B9732C365536000B2C4A /* Sim_App.xcdatamodeld */,
 				C357B95A2C365471000B2C4A /* Assets.xcassets */,
 				C357B95C2C365471000B2C4A /* Preview Content */,
@@ -165,7 +162,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3E37DB32C36677200BBD598 /* TaskManagementView.swift in Sources */,
-				C3E37DC72C36786200BBD598 /* ThemeView.swift in Sources */,
 				C3E37DB92C36697900BBD598 /* AddTaskView.swift in Sources */,
 				C357B9572C36546E000B2C4A /* Sim_App.swift in Sources */,
 				C357B9752C365536000B2C4A /* Sim_App.xcdatamodeld in Sources */,
