@@ -25,7 +25,11 @@ struct TaskManagementView: View {
                             Text("Unknown Task")
                         }
                         Spacer()
-                        Text(task.timeToComplete ?? Date(), style: .date)
+                        if let timeToComplete = task.timeToComplete {
+                            Text("\(timeToComplete, formatter: dateFormatter)")
+                        } else {
+                            Text("Current Time: \(Date(), formatter: dateFormatter)")
+                        }
                         CheckboxView(isChecked: Binding(
                             get: { task.isCompleted },
                             set: { isChecked in
@@ -55,9 +59,6 @@ struct TaskManagementView: View {
             }
         }
         .navigationTitle("Tasks")
-        .navigationBarItems(trailing: NavigationLink(destination: SimSelectionView()) {
-            Text("Change Sim")
-        })
     }
 
     private func deleteTask(offsets: IndexSet) {
@@ -65,6 +66,13 @@ struct TaskManagementView: View {
             offsets.map { tasks[$0] }.forEach(viewContext.delete)
             try? viewContext.save()
         }
+    }
+
+    private var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .short
+        return formatter
     }
 }
 

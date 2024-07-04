@@ -2,14 +2,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
-            SimSelectionView()
-        }
+        SimSelectionView()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
+        SimSelectionView().environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
     }
 }
