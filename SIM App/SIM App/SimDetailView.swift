@@ -2,9 +2,27 @@ import SwiftUI
 
 struct SimDetailView: View {
     @ObservedObject var sim: SimEntity
-
+    let simImages = [
+        "batman",
+        "minion",
+        "angrybird",
+        "mario",
+        "pokeball",
+        "ridinghood",
+        "spongebob",
+        "vader"
+    ]
+    
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 20) {  
+            
+            Image(simImages[Int(sim.character)])
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 100, height: 100)
+                .cornerRadius(10)
+                .padding(.horizontal)
+            
             Text(sim.name ?? "Unnamed Sim")
                 .font(.largeTitle)
                 .fontWeight(.bold)
