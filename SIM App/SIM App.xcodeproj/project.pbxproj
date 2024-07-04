@@ -7,34 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C304E6782C36417D0047B946 /* Sim_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C304E6762C36417D0047B946 /* Sim_App.xcdatamodeld */; };
-		C31C301B2C35D3A8004D375D /* Sim_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31C301A2C35D3A8004D375D /* Sim_App.swift */; };
-		C31C301D2C35D3A8004D375D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31C301C2C35D3A8004D375D /* ContentView.swift */; };
-		C31C301F2C35D3AA004D375D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31C301E2C35D3AA004D375D /* Assets.xcassets */; };
-		C31C30222C35D3AA004D375D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31C30212C35D3AA004D375D /* Preview Assets.xcassets */; };
-		C31C30312C35D5C3004D375D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31C30302C35D5C3004D375D /* Persistence.swift */; };
-		C3D5A2692C36470800968D09 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5A2682C36470800968D09 /* TasksView.swift */; };
-		C3D5A26F2C3647C300968D09 /* CreateSimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5A26E2C3647C300968D09 /* CreateSimView.swift */; };
-		C3D5A2712C36480000968D09 /* SimListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5A2702C36480000968D09 /* SimListView.swift */; };
-		C3D5A2752C364AE300968D09 /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5A2742C364AE300968D09 /* TaskRowView.swift */; };
+		C357B9572C36546E000B2C4A /* Sim_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357B9562C36546E000B2C4A /* Sim_App.swift */; };
+		C357B9592C36546E000B2C4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357B9582C36546E000B2C4A /* ContentView.swift */; };
+		C357B95B2C365471000B2C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C357B95A2C365471000B2C4A /* Assets.xcassets */; };
+		C357B95E2C365471000B2C4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C357B95D2C365471000B2C4A /* Preview Assets.xcassets */; };
+		C357B9652C3654AE000B2C4A /* CreateSimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357B9642C3654AE000B2C4A /* CreateSimView.swift */; };
+		C357B9692C3654D2000B2C4A /* SimListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357B9682C3654D2000B2C4A /* SimListView.swift */; };
+		C357B96B2C3654DE000B2C4A /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357B96A2C3654DE000B2C4A /* TasksView.swift */; };
+		C357B96D2C3654EB000B2C4A /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357B96C2C3654EB000B2C4A /* TaskRowView.swift */; };
+		C357B96F2C3654FC000B2C4A /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357B96E2C3654FC000B2C4A /* PersistenceController.swift */; };
+		C357B9752C365536000B2C4A /* Sim_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C357B9732C365536000B2C4A /* Sim_App.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C304E6772C36417D0047B946 /* Sim_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sim_App.xcdatamodel; sourceTree = "<group>"; };
-		C31C30172C35D3A8004D375D /* SIM App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SIM App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C31C301A2C35D3A8004D375D /* Sim_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sim_App.swift; sourceTree = "<group>"; };
-		C31C301C2C35D3A8004D375D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C31C301E2C35D3AA004D375D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C31C30212C35D3AA004D375D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C31C30302C35D5C3004D375D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		C3D5A2682C36470800968D09 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
-		C3D5A26E2C3647C300968D09 /* CreateSimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSimView.swift; sourceTree = "<group>"; };
-		C3D5A2702C36480000968D09 /* SimListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimListView.swift; sourceTree = "<group>"; };
-		C3D5A2742C364AE300968D09 /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskRowView.swift; path = "Preview Content/TaskRowView.swift"; sourceTree = "<group>"; };
+		C357B9532C36546E000B2C4A /* Sim App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sim App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C357B9562C36546E000B2C4A /* Sim_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sim_App.swift; sourceTree = "<group>"; };
+		C357B9582C36546E000B2C4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C357B95A2C365471000B2C4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C357B95D2C365471000B2C4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C357B9642C3654AE000B2C4A /* CreateSimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSimView.swift; sourceTree = "<group>"; };
+		C357B9682C3654D2000B2C4A /* SimListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimListView.swift; sourceTree = "<group>"; };
+		C357B96A2C3654DE000B2C4A /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
+		C357B96C2C3654EB000B2C4A /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
+		C357B96E2C3654FC000B2C4A /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		C357B9742C365536000B2C4A /* Sim_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sim_App.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C31C30142C35D3A8004D375D /* Frameworks */ = {
+		C357B9502C36546E000B2C4A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,43 +44,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C31C300E2C35D3A8004D375D = {
+		C357B94A2C36546D000B2C4A = {
 			isa = PBXGroup;
 			children = (
-				C31C30192C35D3A8004D375D /* SIM App */,
-				C31C30182C35D3A8004D375D /* Products */,
+				C357B9552C36546E000B2C4A /* Sim App */,
+				C357B9542C36546E000B2C4A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C31C30182C35D3A8004D375D /* Products */ = {
+		C357B9542C36546E000B2C4A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C31C30172C35D3A8004D375D /* SIM App.app */,
+				C357B9532C36546E000B2C4A /* Sim App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C31C30192C35D3A8004D375D /* SIM App */ = {
+		C357B9552C36546E000B2C4A /* Sim App */ = {
 			isa = PBXGroup;
 			children = (
-				C31C301A2C35D3A8004D375D /* Sim_App.swift */,
-				C31C301C2C35D3A8004D375D /* ContentView.swift */,
-				C3D5A26E2C3647C300968D09 /* CreateSimView.swift */,
-				C3D5A2702C36480000968D09 /* SimListView.swift */,
-				C3D5A2682C36470800968D09 /* TasksView.swift */,
-				C3D5A2742C364AE300968D09 /* TaskRowView.swift */,
-				C31C30302C35D5C3004D375D /* Persistence.swift */,
-				C304E6762C36417D0047B946 /* Sim_App.xcdatamodeld */,
-				C31C301E2C35D3AA004D375D /* Assets.xcassets */,
-				C31C30202C35D3AA004D375D /* Preview Content */,
+				C357B9562C36546E000B2C4A /* Sim_App.swift */,
+				C357B9582C36546E000B2C4A /* ContentView.swift */,
+				C357B9642C3654AE000B2C4A /* CreateSimView.swift */,
+				C357B9682C3654D2000B2C4A /* SimListView.swift */,
+				C357B96A2C3654DE000B2C4A /* TasksView.swift */,
+				C357B96C2C3654EB000B2C4A /* TaskRowView.swift */,
+				C357B96E2C3654FC000B2C4A /* PersistenceController.swift */,
+				C357B9732C365536000B2C4A /* Sim_App.xcdatamodeld */,
+				C357B95A2C365471000B2C4A /* Assets.xcassets */,
+				C357B95C2C365471000B2C4A /* Preview Content */,
 			);
-			path = "SIM App";
+			path = "Sim App";
 			sourceTree = "<group>";
 		};
-		C31C30202C35D3AA004D375D /* Preview Content */ = {
+		C357B95C2C365471000B2C4A /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				C31C30212C35D3AA004D375D /* Preview Assets.xcassets */,
+				C357B95D2C365471000B2C4A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -88,39 +88,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C31C30162C35D3A8004D375D /* SIM App */ = {
+		C357B9522C36546E000B2C4A /* Sim App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C31C30252C35D3AA004D375D /* Build configuration list for PBXNativeTarget "SIM App" */;
+			buildConfigurationList = C357B9612C365471000B2C4A /* Build configuration list for PBXNativeTarget "Sim App" */;
 			buildPhases = (
-				C31C30132C35D3A8004D375D /* Sources */,
-				C31C30142C35D3A8004D375D /* Frameworks */,
-				C31C30152C35D3A8004D375D /* Resources */,
+				C357B94F2C36546E000B2C4A /* Sources */,
+				C357B9502C36546E000B2C4A /* Frameworks */,
+				C357B9512C36546E000B2C4A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "SIM App";
-			productName = "SIM App";
-			productReference = C31C30172C35D3A8004D375D /* SIM App.app */;
+			name = "Sim App";
+			productName = "Sim App";
+			productReference = C357B9532C36546E000B2C4A /* Sim App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C31C300F2C35D3A8004D375D /* Project object */ = {
+		C357B94B2C36546D000B2C4A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					C31C30162C35D3A8004D375D = {
+					C357B9522C36546E000B2C4A = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
-			buildConfigurationList = C31C30122C35D3A8004D375D /* Build configuration list for PBXProject "SIM App" */;
+			buildConfigurationList = C357B94E2C36546D000B2C4A /* Build configuration list for PBXProject "Sim App" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -128,48 +128,48 @@
 				en,
 				Base,
 			);
-			mainGroup = C31C300E2C35D3A8004D375D;
-			productRefGroup = C31C30182C35D3A8004D375D /* Products */;
+			mainGroup = C357B94A2C36546D000B2C4A;
+			productRefGroup = C357B9542C36546E000B2C4A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C31C30162C35D3A8004D375D /* SIM App */,
+				C357B9522C36546E000B2C4A /* Sim App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C31C30152C35D3A8004D375D /* Resources */ = {
+		C357B9512C36546E000B2C4A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C31C30222C35D3AA004D375D /* Preview Assets.xcassets in Resources */,
-				C31C301F2C35D3AA004D375D /* Assets.xcassets in Resources */,
+				C357B95E2C365471000B2C4A /* Preview Assets.xcassets in Resources */,
+				C357B95B2C365471000B2C4A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C31C30132C35D3A8004D375D /* Sources */ = {
+		C357B94F2C36546E000B2C4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C31C301D2C35D3A8004D375D /* ContentView.swift in Sources */,
-				C31C30312C35D5C3004D375D /* Persistence.swift in Sources */,
-				C3D5A2752C364AE300968D09 /* TaskRowView.swift in Sources */,
-				C304E6782C36417D0047B946 /* Sim_App.xcdatamodeld in Sources */,
-				C3D5A2712C36480000968D09 /* SimListView.swift in Sources */,
-				C31C301B2C35D3A8004D375D /* Sim_App.swift in Sources */,
-				C3D5A26F2C3647C300968D09 /* CreateSimView.swift in Sources */,
-				C3D5A2692C36470800968D09 /* TasksView.swift in Sources */,
+				C357B9692C3654D2000B2C4A /* SimListView.swift in Sources */,
+				C357B96F2C3654FC000B2C4A /* PersistenceController.swift in Sources */,
+				C357B9652C3654AE000B2C4A /* CreateSimView.swift in Sources */,
+				C357B9592C36546E000B2C4A /* ContentView.swift in Sources */,
+				C357B9572C36546E000B2C4A /* Sim_App.swift in Sources */,
+				C357B9752C365536000B2C4A /* Sim_App.xcdatamodeld in Sources */,
+				C357B96D2C3654EB000B2C4A /* TaskRowView.swift in Sources */,
+				C357B96B2C3654DE000B2C4A /* TasksView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		C31C30232C35D3AA004D375D /* Debug */ = {
+		C357B95F2C365471000B2C4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -232,7 +232,7 @@
 			};
 			name = Debug;
 		};
-		C31C30242C35D3AA004D375D /* Release */ = {
+		C357B9602C365471000B2C4A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -288,14 +288,14 @@
 			};
 			name = Release;
 		};
-		C31C30262C35D3AA004D375D /* Debug */ = {
+		C357B9622C365471000B2C4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SIM App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Sim App/Preview Content\"";
 				DEVELOPMENT_TEAM = GAK59K8WDD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -309,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "personal.SIM-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "personal.Sim-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -317,14 +317,14 @@
 			};
 			name = Debug;
 		};
-		C31C30272C35D3AA004D375D /* Release */ = {
+		C357B9632C365471000B2C4A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SIM App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Sim App/Preview Content\"";
 				DEVELOPMENT_TEAM = GAK59K8WDD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -338,7 +338,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "personal.SIM-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "personal.Sim-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -349,20 +349,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C31C30122C35D3A8004D375D /* Build configuration list for PBXProject "SIM App" */ = {
+		C357B94E2C36546D000B2C4A /* Build configuration list for PBXProject "Sim App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C31C30232C35D3AA004D375D /* Debug */,
-				C31C30242C35D3AA004D375D /* Release */,
+				C357B95F2C365471000B2C4A /* Debug */,
+				C357B9602C365471000B2C4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C31C30252C35D3AA004D375D /* Build configuration list for PBXNativeTarget "SIM App" */ = {
+		C357B9612C365471000B2C4A /* Build configuration list for PBXNativeTarget "Sim App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C31C30262C35D3AA004D375D /* Debug */,
-				C31C30272C35D3AA004D375D /* Release */,
+				C357B9622C365471000B2C4A /* Debug */,
+				C357B9632C365471000B2C4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -370,17 +370,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C304E6762C36417D0047B946 /* Sim_App.xcdatamodeld */ = {
+		C357B9732C365536000B2C4A /* Sim_App.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				C304E6772C36417D0047B946 /* Sim_App.xcdatamodel */,
+				C357B9742C365536000B2C4A /* Sim_App.xcdatamodel */,
 			);
-			currentVersion = C304E6772C36417D0047B946 /* Sim_App.xcdatamodel */;
+			currentVersion = C357B9742C365536000B2C4A /* Sim_App.xcdatamodel */;
 			path = Sim_App.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = C31C300F2C35D3A8004D375D /* Project object */;
+	rootObject = C357B94B2C36546D000B2C4A /* Project object */;
 }
