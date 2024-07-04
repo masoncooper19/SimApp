@@ -22,29 +22,31 @@ struct TaskManagementView: View {
     var body: some View {
         VStack {
             List {
-                Section(header: Text("Tasks")) {
-                    ForEach(tasks) { task in
-                        HStack {
-                            Text(task.name ?? "")
-                            Spacer()
-                            VStack {
-                                Text(task.timeToComplete ?? Date(), style: .date)
-                                    .font(.caption)
-                                Text(task.timeToComplete ?? Date(), style: .time)
-                                    .font(.caption)
-                            }
-                            CheckboxView(isChecked: Binding(
-                                get: { task.isCompleted },
-                                set: { isChecked in
-                                    withAnimation {
-                                        task.isCompleted = isChecked
-                                        try? viewContext.save()
-                                    }
+                if !tasks.isEmpty {
+                    Section(header: Text("Tasks")) {
+                        ForEach(tasks) { task in
+                            HStack {
+                                Text(task.name ?? "")
+                                Spacer()
+                                VStack {
+                                    Text(task.timeToComplete ?? Date(), style: .date)
+                                        .font(.caption)
+                                    Text(task.dateToComplete ?? Date(), style: .time)
+                                        .font(.caption)
                                 }
-                            ))
+                                CheckboxView(isChecked: Binding(
+                                    get: { task.isCompleted },
+                                    set: { isChecked in
+                                        withAnimation {
+                                            task.isCompleted = isChecked
+                                            try? viewContext.save()
+                                        }
+                                    }
+                                ))
+                            }
                         }
+                        .onDelete(perform: deleteTask)
                     }
-                    .onDelete(perform: deleteTask)
                 }
                 
                 if !dailyTasks.isEmpty {

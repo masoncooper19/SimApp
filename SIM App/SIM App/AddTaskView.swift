@@ -72,6 +72,7 @@ struct AddTaskView: View {
             newTask.id = UUID()
             newTask.name = taskName
             newTask.timeToComplete = selectedDate
+            newTask.dateToComplete = selectedTime
             newTask.isCompleted = false
             newTask.sim = sim
         }
