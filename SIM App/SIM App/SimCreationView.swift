@@ -17,7 +17,6 @@ struct SimCreationView: View {
         "vader",
         "america",
         "mushroom",
-        "pacman",
         "scream",
         "walle",
         "pinocchio",

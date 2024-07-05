@@ -19,7 +19,6 @@ struct EditSimView: View {
         "vader",
         "america",
         "mushroom",
-        "pacman",
         "scream",
         "walle",
         "pinocchio",
