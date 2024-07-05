@@ -8,7 +8,14 @@ struct SimDetailView: View {
         "angrybird",
         "ridinghood",
         "spongebob",
-        "vader"
+        "vader",
+        "america",
+        "mushroom",
+        "pacman",
+        "scream",
+        "walle",
+        "pinocchio",
+        "tnmt"
     ]
     
     @State private var showEditSim = false

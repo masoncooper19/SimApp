@@ -16,7 +16,14 @@ struct EditSimView: View {
         "angrybird",
         "ridinghood",
         "spongebob",
-        "vader"
+        "vader",
+        "america",
+        "mushroom",
+        "pacman",
+        "scream",
+        "walle",
+        "pinocchio",
+        "tnmt"
     ]
 
     init(sim: SimEntity) {

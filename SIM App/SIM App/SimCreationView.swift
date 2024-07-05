@@ -14,7 +14,14 @@ struct SimCreationView: View {
         "angrybird",
         "ridinghood",
         "spongebob",
-        "vader"
+        "vader",
+        "america",
+        "mushroom",
+        "pacman",
+        "scream",
+        "walle",
+        "pinocchio",
+        "tnmt"
     ]
 
     var body: some View {
