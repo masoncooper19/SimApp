@@ -18,7 +18,7 @@ class DailyTaskManager: ObservableObject {
             .autoconnect()
             .sink { [weak self] _ in
                 self?.resetDailyTasks()
-                self?.startTimer() // Schedule next reset
+                self?.startTimer()
             }
     }
 
